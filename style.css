@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #121416;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #c28f2c;
+    font-size: 3em;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.shenGif {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    float: left;
+    margin: 50px;
+}
+
+section p {
+    margin: 10px;
+    max-width: 590px;
+    font-size: 1.2em;
+}
+
+footer {
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shenIcon {
+    width: 100px;
+}
+
+footer a {
+    position: relative;
+    top: 0;
+}
+
+footer a:hover {
+    top:-10px;
+    transition: all .2s ease-in-out
+}
+
+@media (max-width: 960px) {
+
+    section {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    section p {
+        text-align: center;
+    }
+
+    .shenGif, section p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+
+    .shenGif {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 360px) {
+    section {
+        width: 300px;
+    }
+    
+    section p {
+        width: 300px;
+        margin: 15px 0;
+    }
+}
